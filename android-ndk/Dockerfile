@@ -1,4 +1,3 @@
-FROM cirrusci/android-sdk:30
+FROM cirrusci/android-sdk:30-ndk
 
-RUN yes | sdkmanager \
-    "ndk;21.3.6528147"
+RUN yes | sdkmanager "21.0.6113669"
