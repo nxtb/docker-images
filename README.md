@@ -7,3 +7,9 @@ cd android-ndk
 docker build -t nxtb/android-ndk .
 docker push nxtb/android-ndk:latest
 ```
+
+```
+cd flutter
+docker build -t nxtb/flutter .
+docker push nxtb/flutter:latest
+```

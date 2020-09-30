@@ -1,4 +1,4 @@
-FROM cirrusci/android-sdk:30-ndk
+FROM cirrusci/flutter:1.20.4
 
 RUN yes | sdkmanager ndk-bundle
 RUN yes | sdkmanager 'cmake;3.10.2.4988404'
