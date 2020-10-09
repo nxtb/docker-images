@@ -18,3 +18,11 @@ RUN yes | sdkmanager \
 RUN yes | sdkmanager \
     "platforms;android-30" \
     "build-tools;30.0.2"
+
+
+RUN apt-get update
+RUN apt-get install dirmngr --install-recommends -y
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys CC86BB64
+RUN add-apt-repository ppa:rmescandon/yq
+RUN apt update
+RUN apt install yq -y
